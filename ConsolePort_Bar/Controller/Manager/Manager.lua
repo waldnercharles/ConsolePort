@@ -25,7 +25,7 @@ Manager.Env = {
 		for owner, set in pairs(bindings) do
 			if self:GetAttribute(owner) then
 				for key, button in pairs(set) do
-					self:SetBindingClick(false, key, button, 'ControllerInput')
+					self:SetBindingClick(false, key, button)
 				end
 			end
 		end
